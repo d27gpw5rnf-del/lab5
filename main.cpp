@@ -264,6 +264,9 @@ vector<int> buildTestSet(const vector<int>& data) {
     #error "Linux is not supported in this branch"
 #endif
 int main() {
+    #ifdef _WIN32
+    #error "Windows is not supported in this branch"
+#endif
     setlocale(LC_ALL, "Russian");
     cout << "=== Вариант 24: Упорядоченный список vs Treap ===\n";
 
