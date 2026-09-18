@@ -260,6 +260,9 @@ vector<int> buildTestSet(const vector<int>& data) {
 }
 
 // ---------- Главная функция ----------
+#ifdef __linux__
+    #error "Linux is not supported in this branch"
+#endif
 int main() {
     setlocale(LC_ALL, "Russian");
     cout << "=== Вариант 24: Упорядоченный список vs Treap ===\n";
